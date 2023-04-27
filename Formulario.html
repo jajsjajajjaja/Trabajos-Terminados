@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario</title><!---->
+        <style>
+            nav{ 
+                background-color: black;
+                overflow: hidden;            
+                width: 100%;
+                border-radius: 10px;
+            }
+            nav a:hover {
+            background-color: rgb(151, 87, 87);
+            }
+            .general{
+                display: flex;
+            }
+            .Cursos{
+                display: flex; 
+                flex-direction: row;
+            } 
+            .Cursos2{
+                margin: 10px;
+            }
+            h1{
+               position: relative;
+            }
+            .formulario{
+                position: relative;
+                border-style: groove;
+                width: 400px;
+                border-color: black;
+                padding: 20px;
+               border-radius: 10px;
+                margin:auto;
+            }
+            footer{
+                display: flex;
+                flex-direction: row;
+                border-radius: 10px;
+                background-color: rgb(0, 0, 0);
+                height: 200px;
+                margin-top: 10px;
+            }
+            .enlaces{
+                padding: 5px;
+                display: flex;
+                margin-left: 10px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body >
+        <header style="text-align:center; border: 2px solid black; border-radius: 10px;">
+            <h1 style="font-size: 36pt; font-family:'Courier New', Courier, monospace;">Snoopy Society</h1>
+        </header>
+        <nav>
+            <a href="#¿Quienes Somos?" style="text-decoration: none; color: #ffffff;
+            float: left; text-align: center; padding: 14px 16px;
+            font-size: 17px;"class="active">¿Quienes somos?</a>
+            <a href="#¿Qué hacemos?" style="text-decoration: none; color: #ffffff;
+            float: left; text-align: center; padding: 14px 16px; font-size: 17px;">¿Qué hacemos?</a>
+            <a href="#Inicio" style="text-decoration: none; color: #ffffff;
+            float: left; text-align: center; padding: 14px 16px; font-size: 17px;" >Inicio</a>
+            <a href="#Actividades" style="text-decoration: none; color: #ffffff;
+            float: left; text-align: center; padding: 14px 16px; font-size: 17px;">Actividades</a>
+        </nav>
+        <main>
+            <div class="general">
+                <div style="border: 2px solid black; width: 500px; border-radius: 10px; margin-top: 10px;">
+                    <img src="https://cdn.shopify.com/s/files/1/0042/7563/4222/collections/snoopy-logo.png?v=1631603429" style="width: 500px;">
+                </div>
+                <div class="Cursos2">
+                    <h1 style="text-align: center;">Actividades para el público</h1>
+                    <div class="Cursos" >  
+                        <a href="#Dibujo artístico" style="text-decoration: none; color: black;
+                        float: left; text-align: center; padding: 14px 16px; font-size: 17px;"> <img src="https://www.enfocamp.es/newsletter/img/boletin/snoopy.jpg" style="width: 250px; height: 200px;">
+                        <h3>Dibujo artístico.</h3></a>
+                        <a href="#Conócete a ti mismo y a los demás" style="text-decoration: none; color: black;
+                        float: left; text-align: center; padding: 14px 16px; font-size: 17px;"><img src="https://www.supermoments.es/wp/wp-content/uploads/2015/05/imagenes-para-colorear-de-snoopy-01.jpg" style="width: 250px; height: 200px;">
+                        <h3>Conócete a ti mismo y a los demás.</h3></a>
+                        <a href="#Danza interpretativa" style="text-decoration: none; color: black;
+                        float: left; text-align: center; padding: 14px 16px; font-size: 17px;"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPJeiA0UeqOMqIVHrb76Q6EBqDGdLrzgu1F99Glo2c-N-IX2_y" style="width: 250px;height: 200px;">
+                        <h3>Danza interpretativa.</h3></a><br>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="formulario">
+                <h2 style="text-align: center;">Únete a <i>Snoopy Society</i></h2>
+                <form>
+                <label><b>Nombre de usuario:</b></label><br>
+                <input type="text"><br>
+                <label><b>Correo electrónico:</b></label><br>
+                <input type="email"><br>
+                <label><b>Nueva contraseña</b></label><br>
+                <input type="password"><br>
+                <label><b>Cumpleaños:</b></label><br>
+                <input type="date"><br> 
+                <label><b>Situación laboral</b></label><br>
+                <input type="radio" name="torn"> Estoy trabajando.
+                <input type="radio" name="torn"> No estoy trabajando.<br>
+                <label><b>Nivel de estudios</b></label><br>
+                <input type="text" list="Estudios">
+                <datalist id="Estudios">
+                    <option value="Primaria">
+                    <option value="Secundaria">
+                    <option value="Bachillerato">
+                    <option value="Universidad">
+                </datalist>
+                <br>
+                <br>
+                <input type="checkbox">He léido y acepto los <b>Términos</b> y <b>Política de privacidad</b> de <em>Snoopy Society</em><br>
+                <br>
+                <div style="text-align: center;"><input type="submit" value="Enviar"></div>
+            </form>
+            </div>
+        </main>
+        <footer>
+                <div style="color: #ffffff; margin-left: 25px; margin-top: 20px;">
+                    <img src="https://cdn.shopify.com/s/files/1/0042/7563/4222/collections/snoopy-logo.png?v=1631603429" style="width: 100px;">
+                </div>
+                    <div style="color: #ffffff; margin-left: 25px; margin-top: 20px;"><h3>¿Qué buscamos?</h3>
+                        <p>Buscamos convertirnos en tu lugar seguro, un espacio en el que sientas que puedes ser tú mismo.</p>
+                    </div>
+                <div></div>
+                <h4 style="color: #ffffff; font-size: 15pt;">Síguenos en:</h4>
+           <nav class="enlaces" >
+                    <img src="https://logo.clearbit.com/twitter.com" alt="logo de twiter" style="height:50px;width: 50px;margin-left: 10px;"><img src="https://logo.clearbit.com/whatsapp.com" alt="whatsapp" style="width:50px; height: 50px;margin-left: 10px">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="IG" style="width: 50px; height: 50px; margin-left: 10px;">
+                    <img src="https://logo.clearbit.com/facebook.com" style="width: 50px; height: 50px; margin-left: 10px">
+            </nav>
+        </footer>
+    </body>
+</html>
